@@ -120,7 +120,7 @@ The project requires:
 
 ### 1. Clone the repository
 
-    git clone <your-private-repository-url>
+    git clone https://github.com/shivam-9s/qa-dream-portal-automation
     cd qa-dream-portal-automation
 
 ### 2. Install dependencies
@@ -489,20 +489,6 @@ A trace can be opened with:
 
 The HTML report can also be used to inspect test execution details.
 
----
-
-# 📸 Screenshots
-
-The project contains a `screenshots/` directory for reference screenshots and explicitly captured UI evidence.
-
-The Home Page test captures:
-
-`screenshots/home-loaded.png`
-
-Playwright also generates failure artifacts automatically according to the project configuration.
-
----
-
 # 🔐 Git and Security
 
 The following files/directories should not be committed:
@@ -547,22 +533,6 @@ Playwright's `expect` assertions are used to take advantage of Playwright's auto
 ### External Service Isolation
 
 The optional AI functionality does not prevent the core UI test suite from running when the external AI service is unavailable.
-
----
-
-# 📤 Submission
-
-For the assignment submission:
-
-1. Push this project to a **private GitHub repository**.
-2. Ensure the complete source code is committed.
-3. Do not commit `.env` or API credentials.
-4. Include the README and project structure.
-5. Share repository access with:
-
-    qawingify
-
----
 
 # ✅ Final Project Status
 
