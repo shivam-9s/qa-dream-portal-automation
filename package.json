@@ -1,0 +1,38 @@
+{
+  "name": "dream-portal-qa-automation",
+  "version": "1.0.0",
+  "description": "Automated functional test suite for the Dream Portal dream-journaling site, built with Playwright + TypeScript, using the Page Object Model. Includes an optional AI-based dream classification bonus check.",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:home": "playwright test tests/home.spec.ts",
+    "test:diary": "playwright test tests/dreamsDiary.spec.ts",
+    "test:total": "playwright test tests/dreamsTotal.spec.ts",
+    "test:ai": "playwright test tests/ai-validation.spec.ts",
+    "report": "playwright show-report",
+    "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
+    "allure:open": "allure open ./allure-report",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "keywords": [
+    "playwright",
+    "qa",
+    "automation",
+    "page-object-model",
+    "dream-portal"
+  ],
+  "author": "QA Intern",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "allure-commandline": "^2.30.0",
+    "allure-playwright": "^2.15.1",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "openai": "^4.56.0"
+  }
+}
